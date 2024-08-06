@@ -14,7 +14,7 @@ const port = SV_PORT? SV_PORT : 3000;
 
 //Config
 app.use(express.json())
-open()//create pool
+await open()//create pool
 
 //Define Routes
 app.use('/api/v1',v1routes)
